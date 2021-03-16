@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Embeds Discord</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether-theme-arrows-dark.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/dark.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/><a class="patreon-link" href="https://patreon.com/orels1" target="_blank">
+  <div class="badge-container">
+    <div class="badge-text">Apoie o criador original</div>
+    <div class="badge-icon"></div>
+    <div class="badge-text badge-text-bottom">Clique aqui.</div>
+  </div></a>
+<div class="container">
+  <div class="col-md-10 offset-md-1">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-header">Gerador de Embeds</div>
+        <div class="card-block">
+          <form id="form">
+            <div class="form-group">
+              <label>Configurações básicas</label>
+              <input class="form-control" id="title" type="text" placeholder="Título (pode utilizar placeholders)"/>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="description" type="text" placeholder="Descrição (pode utilizar placeholders)"></textarea>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="url" type="text" placeholder="URL"/>
+            </div>
+            <div class="form-group">
+              <label>Cor lateral</label>
+              <input class="form-control" id="color" type="color"/>
+            </div>
+            <div class="form-group">
+              <label>Configurações da Thumbnail</label>
+              <input class="form-control" id="icon" type="text" placeholder="Ícone URL (pode utilizar placeholders)"/>
+            </div>
+            <div class="form-group">
+              <label>Configurações do Autor (funciona apenas se título definido)</label>
+              <input class="form-control" id="author_name" type="text" placeholder="Nome do Autor (pode utilizar placeholders)"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="author_url" type="text" placeholder="URL"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="author_icon" type="text" placeholder="Avatar do Autor (pode utilizar placeholders)"/>
+            </div>
+            <div class="form-group">
+              <label>Fields (campos)</label>
+            </div>
+            <div class="input-fields"></div>
+            <div class="form-group">
+              <label>Configuração do Footer</label>
+              <input class="form-control" id="footer" type="text" placeholder="Texto (pode utilizar placeholders)"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><br/>
+  <div class="col-md-8 offset-md-2">         
+    <div class="card">
+      <div class="card-header">Prévia da Embed</div>
+      <div class="card-block preview">
+        <div class="wrapper">
+          <div class="side-colored"></div>
+          <div class="card embed">
+            <div class="card-block">
+              <div class="embed-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br/>
+  <div class="col-md-10 offset-md-1">
+    <div class="card">
+      <div class="card-header">JSON (copie e cole no comando de bem-vindo ou saída)</div>
+      <div class="card-block">
+        <pre><code class="python source"></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

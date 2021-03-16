@@ -1,0 +1,58 @@
+link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
+a.patreon-link(href="https://patreon.com/orels1" target="_blank")
+  .badge-container
+    .badge-text like Apoie o criador original
+    .badge-icon
+    .badge-text.badge-text-bottom Clique aqui.
+
+.container
+  .col-md-10.offset-md-1
+    .card-deck
+      .card
+        .card-header Gerador de Embeds
+        .card-block
+          form#form
+            .form-group
+              label Configurações básicas
+              input#title.form-control(type="text", placeholder="Título (pode utilizar placeholders)")
+            .form-group
+              textarea#description.form-control(type="text", placeholder="Descrição (pode utilizar placeholders)")
+            .form-group
+              input#url.form-control(type="text", placeholder="URL")
+            .form-group
+              label Cor lateral
+              input#color.form-control(type="color")
+            .form-group
+              label Configurações da Thumbnail
+              input#icon.form-control(type="text", placeholder="Ícone URL (pode utilizar placeholders)")
+            .form-group
+              label Configurações do Autor (funciona apenas se título definido)
+              input#author_name.form-control(type="text", placeholder="Nome do Autor (pode utilizar placeholders)")
+            .form-group
+              input#author_url.form-control(type="text", placeholder="URL")
+            .form-group
+              input#author_icon.form-control(type="text", placeholder="Avatar do Autor (pode utilizar placeholders)")
+            .form-group
+              label Fields (campos)
+            .input-fields
+            .form-group
+              label Configuração do Footer
+              input#footer.form-control(type="text", placeholder="Texto (pode utilizar placeholders)")
+  br/
+  .col-md-8.offset-md-2          
+    .card
+      .card-header Prévia da Embed
+      .card-block.preview
+        .wrapper
+          .side-colored
+          .card.embed
+            .card-block
+              .embed-inner
+  br/
+  .col-md-10.offset-md-1
+    .card
+      .card-header JSON (copie e cole no comando de bem-vindo ou saída)
+      .card-block
+        pre
+          code.python.source
+                
