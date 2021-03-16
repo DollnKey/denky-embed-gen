@@ -1,0 +1,1 @@
+# denky-embed-gen
